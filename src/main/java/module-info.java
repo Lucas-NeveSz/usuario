@@ -12,5 +12,9 @@ module org.usuario {
     requires com.almasb.fxgl.all;
 
     opens org.usuario to javafx.fxml;
-    exports org.usuario;
+    //exports org.usuario;
+    exports org.usuario.controller;
+    opens org.usuario.controller to javafx.fxml;
+    exports org.usuario.view;
+    opens org.usuario.view to javafx.fxml;
 }
